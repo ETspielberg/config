@@ -1,6 +1,6 @@
 encrypt:
   key-store:
-    location: ${user.home}/.libintel/libintel.jks
+    location: libintel.jks
     password: ${libintel.keystore.password:3l1m1nat3}
     alias: config
     secret: ${libintel.keystore.secret:22450232}
