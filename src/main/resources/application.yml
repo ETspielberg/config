@@ -1,0 +1,19 @@
+server:
+  port: 11811
+
+spring:
+  profiles:
+    active: ${libintel.profile:dev}
+  security:
+    user:
+      name: ${libintel.config.username:dalek}
+      password: ${libintel.config.password:3l1m1nat3}
+
+  cloud:
+    config:
+      server:
+        git:
+          uri: git@git.uni-due.de:lib-intel/configuration.git
+          force-pull: true
+          cloneOnStart: true
+          basedir: ${user.home}/.libintel/config_repo/
