@@ -13,7 +13,7 @@ spring:
     config:
       server:
         git:
-          uri: git@git.uni-due.de:lib-intel/configuration.git
+          uri: git@git.uni-due.de:ub/lib-intel/configuration.git
           force-pull: true
           cloneOnStart: true
           basedir: ${user.home}/.libintel/config_repo/
